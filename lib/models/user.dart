@@ -16,9 +16,9 @@ class User with UserUtils {
     _type = email != null ? LoginType.email : LoginType.phone;
   }
 
-  User.__(String name) {
+/*  User.__(String name) {
     this._lastName = name;
-  }
+  }*/
 
   factory User({String name, String phone, String email}) {
     if (name.isEmpty) throw Exception("User name is empty");
@@ -109,6 +109,5 @@ class User with UserUtils {
         friends: ${friends.toList()}
     """;
   }
-
 
 }
