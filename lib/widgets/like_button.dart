@@ -1,11 +1,7 @@
-import 'package:FlutterGalleryApp/res/app_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../res/res.dart';
-
+import 'package:FlutterGalleryApp/res/res.dart';
 
 class LikeButton extends StatefulWidget {
-
   LikeButton({this.likeCount = 0, this.isLiked = false});
 
   final int likeCount;
@@ -15,17 +11,15 @@ class LikeButton extends StatefulWidget {
   State<StatefulWidget> createState() {
     return LikeButtonState();
   }
-
 }
 
 class LikeButtonState extends State<LikeButton> {
-
   bool isLiked;
 
   @override
   void initState() {
-      super.initState();
-      isLiked = widget.isLiked;
+    super.initState();
+    isLiked = widget.isLiked;
   }
 
   @override
@@ -54,14 +48,13 @@ class LikeButtonState extends State<LikeButton> {
                   fontFamily: 'Roboto',
                   fontStyle: FontStyle.normal,
                   fontSize: 14,
-                  height: 16 /14
+                  height: 16 / 14,
                 ),
-              )
+              ),
             ],
           ),
         ),
       ),
     );
   }
-
 }

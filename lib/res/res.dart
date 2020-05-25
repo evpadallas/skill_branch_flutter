@@ -1,3 +1,3 @@
 export 'colors.dart';
 export 'styles.dart';
-export 'colors.dart';
+export 'app_icons.dart';
